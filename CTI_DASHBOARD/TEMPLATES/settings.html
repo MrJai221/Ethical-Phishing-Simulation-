@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="header">
+    <h2>SETTINGS & CONFIGURATION</h2>
+    <p>Manage application settings and data.</p>
+</div>
+
+<div class="settings-section">
+    <h3>API Key Status</h3>
+    <p>This shows if API keys are present in your `config.py` file.</p>
+    <table class="cyber-table">
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for service, status in api_status.items() %}
+            <tr>
+                <td>{{ service }}</td>
+                <td>
+                    {% if status == 'Configured' %}
+                    <span class="status-configured">{{ status }}</span>
+                    {% else %}
+                    <span class="status-missing">{{ status }}</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="settings-section">
+    <h3>Data Management</h3>
+    <p class="warning-text">Warning: This action is irreversible and will permanently delete all threat intelligence data from the database.</p>
+    <button id="clear-db-btn" class="cyber-button danger">Clear Entire Database</button>
+    <div id="settings-status" style="margin-top: 15px;"></div>
+</div>
+{% endblock %}

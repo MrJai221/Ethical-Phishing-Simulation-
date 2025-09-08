@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<header class="page-header">
+    <h1>CTI Dashboard</h1>
+</header>
+<div class="dashboard-grid">
+    <div class="widget">
+        <h3 class="widget-title">Threat Detections Over Time</h3>
+        <div class="chart-container">
+            <canvas id="threats-over-time-chart"></canvas>
+        </div>
+    </div>
+    <div class="widget">
+        <h3 class="widget-title">Threats by Severity</h3>
+        <div class="chart-container">
+            <canvas id="threat-severity-chart"></canvas>
+        </div>
+    </div>
+    <div class="widget">
+        <h3 class="widget-title">Live Detections Feed</h3>
+        <div id="live-detections-feed" class="live-feed scrollable-widget">
+            <!-- Live data will be injected here -->
+        </div>
+    </div>
+    <div class="widget" style="grid-column: 1 / 4;"> <!-- Span full width -->
+        <h3 class="widget-title">Global Threat Map</h3>
+        <div style="height: 500px;">
+            <div id="threat-map"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | PhishSim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='welcome.css') }}">
+</head>
+<body>
+  <!-- Background sparkles -->
+  <canvas id="bgCanvas"></canvas>
+  <!-- Header with logo + text -->
+<div class="header-logo">
+  <!-- Inbuilt SVG logo -->
+  <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="#00fff7" d="M12 2L2 7v5c0 5.55 3.84 10.74 10 13 6.16-2.26 10-7.45 10-13V7l-10-5z"/>
+    <path fill="#0ff" d="M12 12l4-4-4-4-4 4 4 4z"/>
+  </svg>
+  <span>PhishSim</span>
+</div>
+
+
+  <div class="welcome-container">
+    <div class="welcome-content">
+      <h1>Welcome to <span>PhishSim</span></h1>
+      <p>Analyze emails like a cybersecurity expert. Detect phishing attacks, review reports, and secure your inbox—all in one place.</p>
+<button onclick="location.href='{{ url_for('dashboard') }}'">Get Started</button>
+
+    </div>
+  </div>
+
+<script >
+    const canvas = document.getElementById('bgCanvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const particles = [];
+const particleCount = 150;
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.radius = Math.random() * 2 + 1;
+    this.color = `rgba(0,255,255,${Math.random()})`;
+    this.speedX = Math.random() * 0.5 - 0.25;
+    this.speedY = Math.random() * 0.5 - 0.25;
+  }
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+    if(this.x < 0) this.x = canvas.width;
+    if(this.x > canvas.width) this.x = 0;
+    if(this.y < 0) this.y = canvas.height;
+    if(this.y > canvas.height) this.y = 0;
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+  }
+}
+
+for(let i=0;i<particleCount;i++){
+  particles.push(new Particle());
+}
+
+function animate() {
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  for(let p of particles){
+    p.update();
+    p.draw();
+  }
+  requestAnimationFrame(animate);
+}
+
+animate();
+window.addEventListener('resize', ()=>{
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+
+</script>
+</body>
+</html>

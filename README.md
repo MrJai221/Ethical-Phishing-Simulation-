@@ -118,10 +118,13 @@ This project is for **educational and personal use only**. Do **not use for mali
 ## Screenshots :
 
 <img width="2880" height="1800" alt="Screenshot 2025-09-08 223349" src="https://github.com/user-attachments/assets/26b4193a-7b37-4f7d-a60b-a0aa5aafe4b8" />
-<img width="2880" height="1800" alt="Screenshot 2025-09-08 223349" src="https://github.com/user-attachments/assets/5dd195fa-937a-435a-94a2-35a5984c44e7" />
-<img width="2880" height="1800" alt="Screenshot 2025-09-08 223349" src="https://github.com/user-attachments/assets/42250603-191c-4fd7-a046-031ab1931bd9" />
-<img width="2880" height="1800" alt="Screenshot 2025-09-08 223349" src="https://github.com/user-attachments/assets/d41275bb-8a95-4311-9362-aa3275f2de51" />
-<img width="2880" height="1800" alt="Screenshot 2025-09-08 223349" src="https://github.com/user-attachments/assets/1b63c695-607b-49d4-a406-de85a327cb23" />
+
+<img width="2880" height="1800" alt="Screenshot 2025-09-08 222646" src="https://github.com/user-attachments/assets/ab63044e-a9c5-4a98-b041-c6fdce77ea93" />
+<img width="2880" height="1800" alt="Screenshot 2025-09-08 223315" src="https://github.com/user-attachments/assets/850ed415-2476-4106-8ec3-489785c34913" />
+
+<img width="2880" height="1800" alt="Screenshot 2025-09-08 223337" src="https://github.com/user-attachments/assets/e4487b37-b6f8-439e-8d57-61129cf185d3" />
+
+<img width="2880" height="1800" alt="Screenshot 2025-09-08 223344" src="https://github.com/user-attachments/assets/7d9e810c-fdf6-4872-9bb9-8dc79cc05c15" />
 
 
 

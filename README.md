@@ -1,6 +1,3 @@
-Sure! Here's a **detailed, user-friendly README** for your PhishSim Dashboard project with emojis to make it visually appealing:
-
----
 
 # 🐟 PhishSim Dashboard
 

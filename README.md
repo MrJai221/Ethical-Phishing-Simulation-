@@ -60,16 +60,13 @@ Sure! Here's a **detailed, user-friendly README** for your PhishSim Dashboard pr
 
 ---
 
-## 🖥️ How to Use
-
-1. Open `index.html` in your browser 🌐
-2. Navigate through the tabs:
+## 🖥️ What we have
 
    * **Email Scan:** Upload or paste email → Click Analyze
    * **Demo Analysis:** Click Run Demo
    * **Campaign Simulation:** Fill the form → Click Send Campaign
    * **Phishing Stats:** View phishing statistics in a line chart
-3. Enjoy the **interactive charts, cards, and animations** 🎨
+  Enjoy the **interactive charts, cards, and animations** 🎨
 
 ---
 
@@ -77,20 +74,6 @@ Sure! Here's a **detailed, user-friendly README** for your PhishSim Dashboard pr
 
 * **All email simulations are safe** and **meant for training purposes only** ⚠️
 * **No real phishing emails** are sent unless backend SMTP is integrated securely 🛡️
-
----
-
-## 📦 File Structure
-
-```
-phishsim-dashboard/
-│
-├── index.html       # Main dashboard file
-├── style.css        # (Optional) Separate CSS file
-├── script.js        # (Optional) Separate JS file
-└── assets/
-    └── logo.png     # Dashboard logo
-```
 
 ---
 

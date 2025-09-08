@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Threat Models | CTI{% endblock %}
+
+{% block content %}
+<main class="page-content">
+    <div class="placeholder-page">
+        <div class="page-header">
+            <i class="fas fa-user-secret fa-3x"></i>
+            <div>
+                <h1>Threat Actor & Campaign Tracking</h1>
+                <p>Move beyond reactive alerting. Proactively model, track, and understand the adversaries targeting your sector and organization.</p>
+            </div>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3><i class="fas fa-database"></i> Actor & Malware Database</h3>
+                <p>Maintain a structured repository of known threat actors, malware families, and their associated TTPs, motives, and targeted industries.</p>
+            </div>
+            <div class="feature-card">
+                <h3><i class="fas fa-bullseye"></i> Campaign Monitoring</h3>
+                <p>Group related incidents and indicators into campaigns. Track the evolution of an adversary's operations over time and anticipate their next move.</p>
+            </div>
+            <div class="feature-card">
+                <h3><i class="fas fa-gem"></i> Diamond Model View</h3>
+                <p>Analyze intrusions using the Diamond Model of Intrusion Analysis, automatically linking adversary, infrastructure, capability, and victim.</p>
+            </div>
+            <div class="feature-card">
+                <h3><i class="fas fa-link"></i> IoC-to-Actor Correlation</h3>
+                <p>Automatically suggest links between new, unidentified IoCs and known threat actors or malware based on historical data and observed patterns.</p>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
